@@ -1,0 +1,93 @@
+.form {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 24px 0;
+}
+
+.form input[name='search-text'] {
+  width: 272px;
+  height: 20px;
+  padding: 8px 16px;
+  font-size: 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  outline: none;
+}
+.load-more-btn,
+.form button {
+  min-width: 90px;
+  height: 40px;
+  padding: 8px 16px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #4e75ff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.load-more-btn {
+  max-width: 200px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.form button:hover {
+  background-color: #6c8cff;
+}
+
+.gallery {
+  list-style: none;
+  padding: 0 24px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.gallery-item {
+  width: calc((100% - 6 * 24px) / 7);
+  border: 1px solid #808080;
+  border-radius: 4px;
+  overflow: hidden;
+  min-width: 0;
+  @media screen and (min-width: 320px) {
+    width: calc((100% - 1 * 24px) / 2);
+  }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 3 * 24px) / 4);
+  }
+  @media screen and (min-width: 1400px) {
+    width: calc((100% - 5 * 24px) / 6);
+  }
+}
+
+.gallery-link {
+  display: block;
+  line-height: 0;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 8px 0;
+}
+
+.info p {
+  margin: 0;
+  gap: 2px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.info p::first-line {
+  font-weight: 700;
+}
